@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2015
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elementalist.Plugins", "Elementalist.Plugins.csproj", "{48B51888-7223-7898-544C-1B0C5BA23696}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elementalist", "Elementalist.csproj", "{8CA23435-AD07-46DD-9E5A-4288E38F1F20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Elementalist.Editor.Plugins", "Elementalist.Editor.Plugins.csproj", "{4CF39583-3D7F-0271-56A0-60B267B57092}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{48B51888-7223-7898-544C-1B0C5BA23696}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48B51888-7223-7898-544C-1B0C5BA23696}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48B51888-7223-7898-544C-1B0C5BA23696}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48B51888-7223-7898-544C-1B0C5BA23696}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CA23435-AD07-46DD-9E5A-4288E38F1F20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CA23435-AD07-46DD-9E5A-4288E38F1F20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CA23435-AD07-46DD-9E5A-4288E38F1F20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CA23435-AD07-46DD-9E5A-4288E38F1F20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CF39583-3D7F-0271-56A0-60B267B57092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CF39583-3D7F-0271-56A0-60B267B57092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CF39583-3D7F-0271-56A0-60B267B57092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CF39583-3D7F-0271-56A0-60B267B57092}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
