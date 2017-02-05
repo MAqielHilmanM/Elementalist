@@ -88,6 +88,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\InputDetector.cs" />
+    <Compile Include="Assets\Scripts\SkillIceSword.cs" />
+    <Compile Include="Assets\Scripts\SkillIceWall.cs" />
+    <Compile Include="Assets\Scripts\SkillTornado.cs" />
+    <Compile Include="Assets\Scripts\SkillTsunami.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
