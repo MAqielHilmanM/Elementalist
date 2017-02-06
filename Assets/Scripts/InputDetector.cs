@@ -13,6 +13,13 @@ public class InputDetector : MonoBehaviour {
     public GameObject Skill_icesword;
     public GameObject Skill_tsunami;
 
+    public GameObject OrbLeftAir;
+    public GameObject OrbLeftWater;
+    public GameObject OrbCenterAir;
+    public GameObject OrbCenterWater;
+    public GameObject OrbRightAir;
+    public GameObject OrbRightWater;
+
     public float skillTime;
 
     // Use this for initialization
@@ -78,6 +85,89 @@ public class InputDetector : MonoBehaviour {
             Skill_icesword.SetActive(false);
             Skill_tsunami.SetActive(false);
             Skill_tornado.SetActive(false);
+        }
+        
+        for (int i = 0; i < bInput.Count; i++) {
+            if (bInput[i] != SkillType.Null)
+            {
+                if (bInput[i] == SkillType.WATER)
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            OrbLeftAir.SetActive(false);
+                            OrbLeftWater.SetActive(true);
+                            break;
+                        case 1:
+                            OrbCenterAir.SetActive(false);
+                            OrbCenterWater.SetActive(true);
+                            break;
+                        case 2:
+                            OrbRightAir.SetActive(false);
+                            OrbRightWater.SetActive(true);
+                            break;
+                        default:
+                            OrbRightAir.SetActive(false);
+                            OrbRightWater.SetActive(false);
+                            OrbCenterAir.SetActive(false);
+                            OrbCenterWater.SetActive(false);
+                            OrbRightAir.SetActive(false);
+                            OrbRightWater.SetActive(false);
+                            break;
+                    }
+                }
+                else
+                {
+                    switch (i)
+                    {
+                        case 0:
+                            OrbLeftAir.SetActive(true);
+                            OrbLeftWater.SetActive(false);
+                            break;
+                        case 1:
+                            OrbCenterAir.SetActive(true);
+                            OrbCenterWater.SetActive(false);
+                            break;
+                        case 2:
+                            OrbRightAir.SetActive(true);
+                            OrbRightWater.SetActive(false);
+                            break;
+                        default:
+                            OrbRightAir.SetActive(false);
+                            OrbRightWater.SetActive(false);
+                            OrbCenterAir.SetActive(false);
+                            OrbCenterWater.SetActive(false);
+                            OrbRightAir.SetActive(false);
+                            OrbRightWater.SetActive(false);
+                            break;
+                    }
+                }
+            }
+            else {
+                switch (i)
+                {
+                    case 0:
+                        OrbLeftAir.SetActive(false);
+                        OrbLeftWater.SetActive(false);
+                        break;
+                    case 1:
+                        OrbCenterAir.SetActive(false);
+                        OrbCenterWater.SetActive(false);
+                        break;
+                    case 2:
+                        OrbRightAir.SetActive(false);
+                        OrbRightWater.SetActive(false);
+                        break;
+                    default:
+                        OrbRightAir.SetActive(false);
+                        OrbRightWater.SetActive(false);
+                        OrbCenterAir.SetActive(false);
+                        OrbCenterWater.SetActive(false);
+                        OrbRightAir.SetActive(false);
+                        OrbRightWater.SetActive(false);
+                        break;
+                }
+            }
         }
 	}
 
